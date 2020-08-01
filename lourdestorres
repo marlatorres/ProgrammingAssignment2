@@ -1,4 +1,4 @@
-## The two functions are used to solve for the inverses of invertible matrices. 
+## The two following functions are used to solve for the inverses of invertible matrices. 
 
 ## This function sets its inverse as null at first and caches it once set. 
 
@@ -13,6 +13,7 @@ makeCacheMatrix <- function(m = matrix()) {
         getI <- function() mt
         list(set = set, get = get, setI = setI, getI = getI)
 }
+
 
 ## This function tries to check if there is a cached inverse to the set matrix. If
 ## there is none yet, it goes back by getting the original matrix and then
@@ -29,5 +30,3 @@ cacheSolve <- function(m, ...) {
         m$setI(mt)
         mt
 }
-
-##End
