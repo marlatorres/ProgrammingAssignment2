@@ -3,7 +3,7 @@
 ## This function sets its inverse as null at first and caches it once set. 
 
 makeCacheMatrix <- function(m = matrix()) {
-        mt <- NULL
+        mt <- NULL   #Sets the inverse matrix as null
         set <- function(y) {
                 m <<- y     #Caches m
                 mt <<- null   #Caches mt
